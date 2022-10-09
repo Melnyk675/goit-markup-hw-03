@@ -24,13 +24,67 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif, 'Raleway', sans-serif;  
+  font-family: 'Roboto', sans-serif, 'Raleway', sans-serif; 
+  font-size: 14px; 
   letter-spacing: 0.03em;
-  background-color: var(--back-color);
+  color: var(--primary-text-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+    width: 1200px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid red;
 }
 
 .header {
     background-color: var(--back-color);
+    margin: 0 auto;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-item {
+   margin: 0px 30px
+}
+
+.wrapper {
+    display: flex;
+align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin: 0px 50px;
 }
 
 .logo-header {
@@ -41,6 +95,9 @@ line-height: 31px;
 letter-spacing: 0.03em;
 color: var(--back1-color);
 text-decoration: none;
+padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 10px;
 }
 
 .logo-part {
@@ -50,10 +107,22 @@ text-decoration: none;
     letter-spacing: 0.03em;
     color: var(--blue-color);
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-left: 20px
 }
 
 .list {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .link-current {
@@ -63,12 +132,15 @@ text-decoration: none;
     letter-spacing: 0.02em;
     color: var(--blue-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 30px;
 }
 
 .link-current:hover,
 .link-current:focus {
-    color: var(--second-color);
-    text-decoration: none;
+    color: var(--accent-color);
+    background-color: var(--back-color);
 }
 
 .link {
@@ -78,12 +150,19 @@ text-decoration: none;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 30px;
 }
 
 .link:hover,
 .link:focus {
-    color: var(--second-color);
+    color: var(--blue-color);
     text-decoration: none;
+}
+
+.contact-item {
+    margin: 0px 50px;
 }
 
 .contact-link-mail {
@@ -91,8 +170,11 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--blue-color);
+color: var(--second-color);
 text-decoration: none;
+padding-top: 32px;
+padding-bottom: 32px;
+gap: 30px;
 }
 
 .contact-link-tel {
@@ -102,29 +184,32 @@ text-decoration: none;
     letter-spacing: 0.02em;
     color: var(--second-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 30px;
 }
 
 .contact-link-mail:hover,
 .contact-link-mail:focus {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--second-color);
-    text-decoration: none;
+    color: var(--blue-color);
+    background-color: var(--back-color);
 }
 
 .contact-link-tel:hover,
 .contact-link-tel:focus {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--third-color);
-    text-decoration: none;
+    color: var(--blue-color);
+    background-color: var(--back-color);
 }
 
-.hero,
+.hero-section {
+    background-color: var(--third-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+}
+
 .hero-title {
 font-weight: 900;
 font-size: 44px;
@@ -132,33 +217,44 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-background-color: var(--third-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
 color: var(--back-color);
+width: 696px;
+text-align: center;
+margin-left: 240px;
+margin-right: 220px;
+margin-bottom: 30px;
+}
+
+
+.container-box {
+    background-color: #2F303A;
 }
 
 .btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    background-color: var(--blue-color);
-    border: none;
-    color: var(--back-color);
-}
-
-.btn:hover,
-.btn:focus {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     background-color: var(--blue-color);
+    border-radius: 4px;
     border: none;
     color: var(--back-color);
     cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 32px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--blue-color);
+    color: var(--back-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-subtitle {
@@ -177,6 +273,7 @@ color: var(--back-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-color);
+   
 }
 
 .business,
@@ -187,6 +284,14 @@ color: var(--back-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    padding-bottom: 50px;
+}
+
+.work-item {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    gap: 30px;
 }
 
 .section-team {
@@ -205,6 +310,7 @@ color: var(--back-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    display: block;
 }
 
 .team-item,
@@ -215,14 +321,27 @@ color: var(--back-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    background-color: var(--back-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
+
 .team-paragraph {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-color);
+    margin-top: 10px;
+}
+
+.team-container {
+    padding: 20px 24px;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .button {
@@ -233,8 +352,11 @@ color: var(--back-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    background:  var(--hover-focus-color);
+    background: var(--hover-focus-color);
+    border-radius: 4px;
     border: none;
+    padding: 6px 22px;
+    margin-bottom: 10px
 }
 
 .button:hover,
@@ -255,6 +377,38 @@ color: var(--back-color);
     color: var(--back2-color);
 }
 
+.menu {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    border-bottom: 1px solid;
+    margin-bottom: 34px;
+    margin-top: 10px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.list-img {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.products-link {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.products-container {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
 .title {
     font-weight: 700;
     font-size: 18px;
@@ -272,26 +426,36 @@ color: var(--back-color);
 }
 
 .footer-back {
-    font-family: 'Raleway';
+    font-family: 'Roboto';
     background-color: var(--third-color);
 }
 
+.footer {
+    padding-top: 200px;
+}
+
 .logo-footer {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--blue-color);
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo-web {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--back-color);
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .address {
@@ -316,11 +480,8 @@ color: var(--back-color);
 
 .address-item:hover,
 .address-item:focus {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    background-color: var(--third-color);
     color: var(--hover-focus-color);
-    text-decoration: none;
 }
 
 
