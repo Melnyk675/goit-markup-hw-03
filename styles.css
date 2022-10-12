@@ -58,23 +58,16 @@ img {
 
 .container {
     width: 1200px;
-    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     outline: 1px solid red;
 }
 
 .header {
-    background-color: var(--back-color);
-    margin: 0 auto;
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-item {
-   margin: 0px 30px
-}
 
 .wrapper {
     display: flex;
@@ -84,7 +77,6 @@ align-items: center;
 .header-navigation {
     display: flex;
     align-items: center;
-    margin: 0px 50px;
 }
 
 .logo-header {
@@ -96,27 +88,27 @@ letter-spacing: 0.03em;
 color: var(--back1-color);
 text-decoration: none;
 padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 10px;
+padding-bottom: 25px;
+margin-right: 93px;
 }
 
 .logo-part {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
     color: var(--blue-color);
-    text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-left: 20px
+}
+
+.site-contact {
+    display: flex;
+}
+
+.site-nav {
+    display:flex;
+    gap: 50px;
 }
 
 .list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .team {
@@ -152,7 +144,7 @@ padding-top: 24px;
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
-    gap: 30px;
+    gap: 50px;
 }
 
 .link:hover,
@@ -161,8 +153,9 @@ padding-top: 24px;
     text-decoration: none;
 }
 
-.contact-item {
-    margin: 0px 50px;
+.contact-item:not(:last-child) {
+    margin-right: 30px;
+    margin-left: 200px;
 }
 
 .contact-link-mail {
@@ -205,9 +198,7 @@ gap: 30px;
     background-color: var(--third-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-title {
@@ -220,8 +211,8 @@ text-transform: uppercase;
 color: var(--back-color);
 width: 696px;
 text-align: center;
-margin-left: 240px;
-margin-right: 220px;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: 30px;
 }
 
@@ -242,7 +233,6 @@ margin-bottom: 30px;
     color: var(--back-color);
     cursor: pointer;
     display: inline-block;
-    box-sizing: border-box;
     padding: 10px 32px;
 }
 
@@ -252,9 +242,25 @@ margin-bottom: 30px;
     color: var(--back-color);
 }
 
+.business .section {
+    padding-top: 0;
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.feature-list {
+    flex-basis: calc((100% - (3 * 30px)) / 4);
 }
 
 .section-subtitle {
@@ -276,7 +282,6 @@ margin-bottom: 30px;
    
 }
 
-.business,
 .title-question {
     font-weight: 700;
     font-size: 36px;
@@ -284,7 +289,7 @@ margin-bottom: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .work-item {
@@ -295,11 +300,6 @@ margin-bottom: 30px;
 }
 
 .section-team {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
     background: var(--hover-focus-color);
 }
 
@@ -310,18 +310,11 @@ margin-bottom: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    display: block;
+    margin-bottom: 50px;
 }
 
 .team-item,
 .team-people {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    background-color: var(--back-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -338,10 +331,7 @@ margin-bottom: 30px;
 }
 
 .team-container {
-    padding: 20px 24px;
-    border: 1px solid #FFFFFF;
-    border-top: none;
-    border-radius: 0px 0px 4px 4px;
+    padding: 30px 0;
 }
 
 .button {
@@ -354,7 +344,9 @@ margin-bottom: 30px;
     color: var(--primary-text-color);
     background: var(--hover-focus-color);
     border-radius: 4px;
+    cursor: pointer;
     border: none;
+    display: block;
     padding: 6px 22px;
     margin-bottom: 10px
 }
@@ -404,7 +396,7 @@ margin-bottom: 30px;
 }
 
 .products-container {
-    padding: 20px 24px;
+    padding: 20px 54px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
@@ -428,10 +420,12 @@ margin-bottom: 30px;
 .footer-back {
     font-family: 'Roboto';
     background-color: var(--third-color);
+    padding-top: 20px;
+   padding-bottom: 20px;
 }
 
-.footer {
-    padding-top: 200px;
+.footer-back .container {
+    padding: 60px 0;
 }
 
 .logo-footer {
@@ -442,8 +436,8 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     color: var(--blue-color);
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .logo-web {
@@ -458,8 +452,12 @@ margin-bottom: 30px;
     padding-bottom: 25px;
 }
 
-.address {
-    font-style: normal;
+.address .list {
+    flex-direction: column;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .address-target {
@@ -470,7 +468,7 @@ margin-bottom: 30px;
     text-decoration: none;
 }
 
-.address-item {
+.address-effect {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
